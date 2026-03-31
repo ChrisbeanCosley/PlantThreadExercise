@@ -2,7 +2,7 @@ package Plant;
 
 public class DecreasePlantStats extends Thread{
     PlantCareAssistant plantCareAssistant;
-    public volatile boolean allPlantsAreDead = false;
+    private boolean allPlantsAreDead = false;
 
     public DecreasePlantStats(PlantCareAssistant plantCareAssistant){
         this.plantCareAssistant = plantCareAssistant;
